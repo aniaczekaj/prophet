@@ -1,0 +1,16 @@
+#home-banner {
+  height: 100vh;
+  background-size: cover !important;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content h1 {
+  color: white;
+ }
+
+.banner-content h3 {
+  color: white;
+  padding-bottom: 50px;
+}

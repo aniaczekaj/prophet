@@ -1,1 +1,19 @@
-// Specific CSS for your home-page
+html,body{
+  height: 100%;
+}
+
+.about-us {
+  padding: 50px;
+}
+
+.about-us-owners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.our-story {
+  padding: 50px;
+}
