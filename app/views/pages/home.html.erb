@@ -1,13 +1,83 @@
 <div id="home-banner" class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 100%), url('https://www.weekendnotes.com/im/005/01/20130816-2018271.jpg');">
 
-  <div class="banner-content text-center">
+  <div class="banner-content text-center col-xs-12">
     <h1>The Prophet</h1>
-    <h3>Best lebanese food in Perth</h3>
+    <h3>Perth's most authentic Lebanese food</h3>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
+    <div class="col-xs-12">
+      <div class="menu-container">
+        <h2 class="text-center">Menu</h2>
+        <div class="col-xs-12 col-md-3 menu-column">
+          <h3>Starters</h3>
+          <ul>
+            <div>Hommus<span class="price">12</span></div>
+            <p>Chickpea dip</p>
+            <div>Baba<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Labneh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Tabbouleh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Falafel<span>14</span></div>
+            <p>Chickpea dip</p>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-3 menu-column">
+          <h3>Meat </h3>
+          <ul>
+            <div>Hommus<span class="price">12</span></div>
+            <p>Chickpea dip</p>
+            <div>Baba<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Labneh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Tabbouleh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Falafel<span>14</span></div>
+            <p>Chickpea dip</p>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-3 menu-column">
+          <h3>Chicken</h3>
+          <ul>
+            <div>Hommus<span class="price">12</span></div>
+            <p>Chickpea dip</p>
+            <div>Baba<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Labneh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Tabbouleh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Falafel<span>14</span></div>
+            <p>Chickpea dip</p>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-3 menu-column">
+          <h3>Vegetarian</h3>
+          <ul>
+            <div>Hommus<span class="price">12</span></div>
+            <p>Chickpea dip</p>
+            <div>Baba<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Labneh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Tabbouleh<span>12</span></div>
+            <p>Chickpea dip</p>
+            <div>Falafel<span>14</span></div>
+            <p>Chickpea dip</p>
+          </ul>
+        </div>
+        <div class=" menu-more">
+          <%= link_to "See full menu", menu_path %>
+        </div>
+      </div>
+    </div>
+
+
     <div class="col-xs-12">
       <div class="about-us text-center">
         <h2>Who are we</h2>
@@ -15,11 +85,11 @@
         </p>
         <div class="about-us-owners col-xs-12 col-md-6">
           <%= image_tag 'jihad.jpg', class:'avatar-large' %>
-          <h2>Jihad</h2>
+          <h3>Jihad</h3>
         </div>
         <div class="about-us-owners col-xs-12 col-md-6">
           <%= image_tag 'christian.jpg', class:'avatar-large' %>
-          <h2>Christian</h2>
+          <h3>Christian</h3>
         </div>
       </div>
     </div>
@@ -36,138 +106,158 @@
       </div>
     </div>
   </div>
+
+
+  <div class="quote">
+    <h3>
+      “Let there be spaces in your togetherness, And let the winds of the heavens dance between you. Love one another but make not a bond of love: Let it rather be a moving sea between the shores of your souls. Fill each other's cup but drink not from one cup. Give one another of your bread but eat not from the same loaf. Sing and dance together and be joyous, but let each one of you be alone, Even as the strings of a lute are alone though they quiver with the same music. Give your hearts, but not into each other's keeping. For only the hand of Life can contain your hearts. And stand together, yet not too near together: For the pillars of the temple stand apart, And the oak tree and the cypress grow not in each other's shadow.” </h3>
+      <p>― Kahlil Gibran, The Prophet </p>
+    </div>
 </div>
 
-  <div class="gallery-container">
-    <h1 class="text-center"></h1>
-    <p class="page-description text-center"></p>
-    <div class="tz-gallery">
-      <div class="row ">
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/1.png">
-                <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
 
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/2.jpg">
-                <%= image_tag "2.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
 
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/3.jpg">
-                <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-         <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/1.png">
-                <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/4.jpg">
-                <%= image_tag "4.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
 
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/5.jpg">
-                <%= image_tag "5.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/6.png">
-                <%= image_tag "6.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
+<div class="container gallery-container">
+  <h2 class="text-center">Gallery</h2>
+  <p class="page-description text-center"></p>
+  <div class="tz-gallery">
+    <div class="row ">
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/1.png">
+              <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
       </div>
 
-      <div class="row ">
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/1.png">
-                <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/2.jpg">
-                <%= image_tag "2.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-         <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/3.jpg">
-                <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/1.png">
-                <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/2.jpg">
+              <%= image_tag "2.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
       </div>
 
-      <div class="row ">
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/4.jpg">
-                <%= image_tag "4.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/5.jpg">
-                <%= image_tag "5.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/6.png">
-                <%= image_tag "6.png", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
-         <div class="col-md-3">
-            <div class="card">
-                <a class="lightbox" href="images/3.jpg">
-                <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
-                </a>
-            </div>
-        </div>
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/3.jpg">
+              <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
       </div>
+       <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/1.png">
+              <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/4.jpg">
+              <%= image_tag "4.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/hummus.jpg">
+              <%= image_tag "hummus.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/6.png">
+              <%= image_tag "6.png", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/2.jpg">
+              <%= image_tag "2.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
 
     </div>
+
+    <div class="row ">
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/1.png">
+              <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/2.jpg">
+              <%= image_tag "2.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+       <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/3.jpg">
+              <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/1.png">
+              <%= image_tag "1.png", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/4.jpg">
+              <%= image_tag "4.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/5.jpg">
+              <%= image_tag "5.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/6.pngfalafel.jpg">
+              <%= image_tag "falafel.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+       <div class="col-md-3 photo">
+          <div class="photo-card">
+              <a class="lightbox" href="images/3.jpg">
+              <%= image_tag "3.jpg", alt:"Jihad and Manu", class:"card-img-top"%>
+              </a>
+          </div>
+      </div>
+    </div>
+
   </div>
 </div>
+
 

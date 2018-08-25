@@ -1,42 +1,21 @@
-<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Montserrat:400,500" rel="stylesheet">
-
 <div class="navbar-wagon">
-  <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <!-- <img src="logomakr.com/2EdbyK" alt="home"> -->
-    The Prophet
-  </a>
+  <div class="navbar-container">
+    <!-- Logo -->
+    <div class="navbar-wagon-left">
+      <%= link_to "The Prophet", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <p>08 9242 1229 </p>
+    </div>
 
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right ">
-
-
-    <!-- When developer is signed in -->
-
+    <!-- Right Navigation -->
+    <div class="navbar-wagon-right ">
       <div class="navbar-wagon-item navbar-wagon-link">
         <div class="dropdown display-flex">
-            <div class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">More</div>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: " Dashboard") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-cog"></i><%= t(".profile", default: " Edit profile") %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "#" do %>
-                <i class="fas fa-sign-in-alt"></i></i>  <%= t(".sign_out", default: " Log out") %>
-            </li>
-          </ul>
+            <%= link_to "Menu", menu_path, class: "navbar-wagon-item navbar-wagon-link" %>
+            <%= link_to "Our story", our_story_path, class: "navbar-wagon-item navbar-wagon-link" %>
         </div>
       </div>
-
-    <% end %>
+    </div>
   </div>
 </div>
-</div>
+
 

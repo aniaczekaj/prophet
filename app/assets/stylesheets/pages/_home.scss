@@ -2,8 +2,43 @@ html,body{
   height: 100%;
 }
 
+h2 {
+  font-family: Dancing Script;
+  font-size: 56px;
+}
+
+.menu-container {
+  padding: 50px;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  span {
+    float: right;
+  }
+}
+
+.menu-column {
+  padding: 5px 20px;
+  p {
+    font-style: italic;
+    opacity: 0.9;
+  }
+}
+
+.menu-more {
+  text-align: right;
+  a {
+    color: black;
+  }
+}
+
 .about-us {
   padding: 50px;
+  h3 {
+    font-weight: lighter;
+    font-size: 26px;
+  }
 }
 
 .about-us-owners {
@@ -17,3 +52,15 @@ html,body{
 .our-story {
   padding: 50px;
 }
+
+.quote {
+  padding: 50px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  h3 {
+    font-family: Dancing Script;
+  }
+}
+
+
