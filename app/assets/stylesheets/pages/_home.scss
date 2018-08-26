@@ -19,19 +19,30 @@ h2 {
 }
 
 .menu-column {
-  padding: 5px 20px;
+  padding: 20px 30px;
   p {
     font-style: italic;
     opacity: 0.9;
+    font-size: 12px;
   }
 }
 
 .menu-more {
-  text-align: right;
+  text-align: center;
+  padding: 10px;
   a {
     color: black;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 1px 1px 2px gray;
   }
 }
+
+
+.about-us-container {
+  margin-top: 100px;
+}
+
 
 .about-us {
   padding: 50px;
