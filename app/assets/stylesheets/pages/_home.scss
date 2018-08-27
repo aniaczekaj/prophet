@@ -9,12 +9,17 @@ h2 {
 
 .menu-container {
   padding: 50px;
+
   ul {
     list-style: none;
     padding-left: 0;
   }
-  span {
+  .price {
     float: right;
+  }
+  .allergy-tags {
+    font-size: 12px;
+    margin-left: 5px;
   }
 }
 
@@ -26,6 +31,7 @@ h2 {
     font-size: 12px;
   }
 }
+
 
 .menu-more {
   text-align: center;
@@ -67,11 +73,25 @@ h2 {
 .quote {
   padding: 50px;
   text-align: center;
-  width: 60%;
   margin: auto;
   h3 {
     font-family: Dancing Script;
   }
+}
+
+.location {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  p {
+    opacity: 0.9;
+  }
+  h3 {
+    font-weight: 300;
+  }
+
+
 }
 
 

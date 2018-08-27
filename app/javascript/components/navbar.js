@@ -1,4 +1,5 @@
 function initUpdateNavbarOnScroll() {
+  console.log("Hello from app/javascript/packs/application.js!");
   const navbar = document.querySelector('.navbar-wagon');
   if (navbar) {
     window.addEventListener('scroll', () => {
