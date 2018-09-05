@@ -3,7 +3,10 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "basiclightbox": "^4.0.3",
     "bootstrap": "3",
+    "ekko-lightbox": "^5.3.0",
+    "gmaps": "^0.4.24",
     "jquery": "^3.3.1"
   },
   "devDependencies": {

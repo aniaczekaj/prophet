@@ -1,0 +1,389 @@
+import GMaps from 'gmaps/gmaps.js';
+
+function initMap() {
+  const mapElement = document.getElementById('map');
+  if (mapElement) {
+    var geocoder    = new google.maps.Geocoder();
+    var selLocLat   = 0;
+    var selLocLng   = 0;
+
+    geocoder.geocode({'address': '907 Albany Hwy <br> East Victoria Park WA 6101'}, function(results, status) {
+      if (status === 'OK') {
+
+          selLocLat   = results[0].geometry.location.lat();
+          selLocLng   = results[0].geometry.location.lng();
+          var prophet = new google.maps.LatLng(selLocLat, selLocLng);
+
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: prophet,
+            zoom: 15,
+            styles: [
+              {
+                  "featureType": "all",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "weight": "2.00"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "all",
+                  "elementType": "geometry.stroke",
+                  "stylers": [
+                      {
+                          "color": "#9c9c9c"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "all",
+                  "elementType": "labels.text",
+                  "stylers": [
+                      {
+                          "visibility": "on"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "color": "#f2f2f2"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "landscape.man_made",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "poi",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "saturation": -100
+                      },
+                      {
+                          "lightness": 45
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#eeeeee"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "color": "#7b7b7b"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.highway",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "simplified"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "road.arterial",
+                  "elementType": "labels.icon",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "transit",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "visibility": "off"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [
+                      {
+                          "color": "#46bcec"
+                      },
+                      {
+                          "visibility": "on"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "geometry.fill",
+                  "stylers": [
+                      {
+                          "color": "#c8d7d4"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "labels.text.fill",
+                  "stylers": [
+                      {
+                          "color": "#070707"
+                      }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "elementType": "labels.text.stroke",
+                  "stylers": [
+                      {
+                          "color": "#ffffff"
+                      }
+                  ]
+              }
+          ]
+          });
+
+          var marker = new google.maps.Marker({
+            position: prophet,
+            map: map,
+            animation: google.maps.Animation.DROP,
+
+          });
+
+          var  infowindow = new google.maps.InfoWindow();
+          google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('The Prophet Lebanese Cafe 907 Albany Hwy');
+              infowindow.open(map, this);
+          });
+      } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+      };
+    });
+
+    console.log("helloooo");
+    const styles = [
+        {
+            "featureType": "all",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "weight": "2.00"
+                }
+            ]
+        },
+        {
+            "featureType": "all",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "color": "#9c9c9c"
+                }
+            ]
+        },
+        {
+            "featureType": "all",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "on"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#f2f2f2"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 45
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#eeeeee"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#7b7b7b"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#46bcec"
+                },
+                {
+                    "visibility": "on"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#c8d7d4"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#070707"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        }
+    ];
+
+    // map.setOptions({
+    //   styles: styles,
+    //   // mapTypeId: 'map_style'
+    // });
+    // map.setStyle('map_style');
+  }
+}
+
+export{ initMap };
