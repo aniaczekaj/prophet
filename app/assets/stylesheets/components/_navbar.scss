@@ -16,7 +16,7 @@
   transition: 0.5s background-color ease;
 
   .logo {
-    display: none;
+    height: 50px;
   }
 }
 
@@ -30,21 +30,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a {
-    color: #05A58D;
-    font-weight: 700;
-  }
+  // a {
+  //   color: #05A58D;
+  //   font-weight: 700;
+  // }
 }
 
 
-
 .navbar-wagon-item.navbar-wagon-link {
-  color: #05A58D;
-  font-weight: 700;
-}
-
-.navbar-wagon-item.navbar-wagon-link {
-    color: #05A58D;
+    color: $green;
   }
 
 
@@ -84,8 +78,9 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .navbar-wagon-link:hover {
@@ -94,7 +89,3 @@
 }
 
 
-.display-flex {
-  display: flex;
-  align-items: center;
-}
